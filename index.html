@@ -1,77 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>resume-website</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubibi Julia - Software Engineering Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Rubibi Julia</h1>
-    <p>resume-website</p>
-    <button id="menu-btn" aria-label="Open navigation">&#9776;</button>
-        <nav>
-  <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Rubibi Julia</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-  </header>
-  <main>
-    <section id="about">
-	    <main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Born and raised in Rwanda, I'm a Software Engineering student with experience in business services, hospitality, and digital marketing. I'm passionate about technology, communication, and using my skills to create practical solutions.</p>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Computer skills</li>
-      <li>Communication</li>
-      <li>Hospitality</li>
-      <li>Business skills</li>
-      <li>Web designing</li>
-    </ul>
-  </section>
-  <section id="experience">
-    <h2>Experience</h2>
-    <article>
-      <h3>Taka Trade and Services Ltd</h3>
-    </article>
-    <article>
-      <h3>Evryting Irie Jamaican Restaurant</h3>
-    </article>
-  </section>
-  <section id="education">
-    <h2>Education</h2>
-    <article>
-      <h3>Bachelors of Software Engineering</h3>
-    </article>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <p><!-- Add your projects here --></p>
-  </section>
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:rubibijulia5@gmail.com">rubibijulia5@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/julia-rubibi-157588365" target="_blank">www.linkedin.com/in/julia-rubibi-157588365</a></li>
-      <li>Phone: <a href="tel:0784494879">0784494879</a></li>
-    </ul>
-  </section>
-</main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hi, I'm Rubibi Julia</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Engineering Student</h2>
+                    <p class="hero-description">
+                        Passionate about technology, communication, and creating practical solutions. 
+                        Experienced in business services, hospitality, and digital marketing.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card"><div class="profile-image">
+                            <img src="img/IMG1.jpeg" alt="Rubibi Julia" class="profile-img">
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 2s">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Rubibi Julia</p>
-  </footer>
-  <script src="script.js"></script>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Rubibi Julia</h3>
+                    <p>
+                        Born and raised in Rwanda, I'm a dedicated Software Engineering student with a diverse 
+                        background in business services, hospitality, and digital marketing. My journey has 
+                        equipped me with strong communication skills and a passion for technology.
+                    </p>
+                    <p>
+                        I believe in using technology to create practical solutions that make a real difference. 
+                        Whether it's developing software applications or implementing digital marketing strategies, 
+                        I approach every project with enthusiasm and attention to detail.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>2+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>3</h4>
+                            <p>Languages</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h4>Contact Information</h4>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>0784494879</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rubibijulia5@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rwanda, Kigali</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Languages</h4>
+                        <div class="language-item">
+                            <span>English</span>
+                            <div class="language-bar">
+                                <div class="language-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span>Kinyarwanda</span>
+                            <div class="language-bar">
+                                <div class="language-progress" data-width="100%"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span>French</span>
+                            <div class="language-bar">
+                                <div class="language-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>Client Services & Digital Marketing Specialist</h3>
+                        <h4>TAKA TRADE & SERVICES Ltd</h4>
+                        <p>Business Development Specialist focusing on client services and digital marketing strategies to drive business growth and enhance customer engagement.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Digital Marketing</span>
+                            <span class="skill-tag">Business Development</span>
+                            <span class="skill-tag">Client Relations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 - 2024</div>
+                        <h3>Hospitality & Language Support Assistant</h3>
+                        <h4>Evryting Irie Jamaican Restaurant</h4>
+                        <p>Reception & Guest Services Specialist providing exceptional customer service and language support to enhance guest experience in a multicultural environment.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Customer Service</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Hospitality</span>
+                            <span class="skill-tag">Multilingual Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">What I bring to the table</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Computer Skills</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Digital Marketing</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Software Engineering</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Management</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Hospitality</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic background</p>
+            </div>
+            <div class="education-content">
+                <div class="education-item" data-aos="fade-up">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelor of Software Engineering</h3>
+                        <h4>African Leadership University</h4>
+                        <div class="education-year">2025</div>
+                        <p>Currently pursuing a comprehensive degree in Software Engineering, focusing on modern development practices, system design, and emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Mathematics-Computer Science-Economics</h3>
+                        <h4>ES STELLA MATUTINA</h4>
+                        <div class="education-year">2020 - 2023</div>
+                        <p>Completed secondary education with a strong foundation in mathematics, computer science, and economics, preparing for advanced studies in technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for any opportunities or collaborations.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>0784494879</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>rubibijulia5@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Rwanda, Kigali</p>
+                        </div>
+                    </div>
+                    <div class="references">
+                        <h4>References</h4>
+                        <div class="reference-item">
+                            <strong>CEO / TAKA TRADE & SERVICES Ltd</strong>
+                            <p>0784180176</p>
+                        </div>
+                        <div class="reference-item">
+                            <strong>EVRYTING IRIE / MANAGER</strong>
+                            <p>0788452155</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rubibi Julia. All rights reserved.</p>
+                <p>Made with ❤️ and dedication</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
