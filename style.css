@@ -1,19 +1,4 @@
-/* CSS Variables */
-:root {
-    --primary-color: #6c5ce7;
-    --secondary-color: #a29bfe;
-    --accent-color: #fd79a8;
-    --text-color: #2d3436;
-    --text-light: #636e72;
-    --white: #ffffff;
-    --light-bg: #f8f9fa;
-    --dark-bg: #2d3436;
-    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    --shadow: 0 10px 30px rgba(108, 92, 231, 0.1);
-    --shadow-hover: 0 20px 60px rgba(108, 92, 231, 0.2);
-    --border-radius: 15px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 /* Reset and Base Styles */
 * {
